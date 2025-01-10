@@ -84,7 +84,7 @@ const webhookRoutes = require("./routes/webhookRoutes");
  * Route Definitions
  */
 
-app.get("/health", healthCheckHandler);
+app.get("/api/health", healthCheckHandler);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/oauth", oauthRoutes);
